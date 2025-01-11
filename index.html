@@ -1,7 +1,39 @@
 <!DOCTYPE html>
 <html>
+  
+  
+  <title>Homepage</title>
+  <!-- Add Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
 
-<head>
+  <script>
+    // Initialize Firebase with your project's config
+    var firebaseConfig = {
+        apiKey: "here",
+		authDomain: "here",
+		projectId: "here",
+		storageBucket: "here",
+		messagingSenderId: "here",
+		appId: "here"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    // Function to check if a user is logged in or not
+    function checkAuthState() {
+      firebase.auth().onAuthStateChanged(function(user) {
+        if (!user) {
+          // User is not signed in, redirect to the login page
+          window.location.href = "login.html";
+        }
+      });
+    }
+  </script>
+</head>
+<body onload="checkAuthState()">
+
+  
+  <head>
   <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
