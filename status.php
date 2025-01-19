@@ -2,8 +2,8 @@
 
 // Be sure to enable query support in your server/bungeecord config! (enable-query setting)
 
-$configServerAddress = 'play.yourserver.com'; // your server hostname or ip address
-$configServerPort = 25565; // your server port
+$configServerAddress = 'play.ragemc.online'; // your server hostname or ip address
+$configServerPort = 19140; // your server port
 $configServerName = 'YourServerName'; // your server name
 $configServerWebsite = '#'; // your server website URL, set to '' if you don't have one
 $configServerLogo = ''; // your server LOGO (URL of image), set to '' if you don't have one
